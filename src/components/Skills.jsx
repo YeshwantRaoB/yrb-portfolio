@@ -6,6 +6,10 @@ import {
   FaNetworkWired,
   FaTerminal,
   FaCogs,
+  FaJava,
+  FaDatabase,
+  FaAws,
+  FaChalkboardTeacher,
 } from 'react-icons/fa';
 import {
   SiVirtualbox,
@@ -15,9 +19,12 @@ import {
   SiReact,
   SiTailwindcss,
   SiLinux,
+  SiPython,
+  SiExpress,
+  SiNextdotjs,
+  SiMongodb,
+  SiFirebase,
 } from 'react-icons/si';
-import { SiPython } from 'react-icons/si';
-import { FaJava, FaDatabase } from 'react-icons/fa';
 
 const skills = [
   {
@@ -125,6 +132,48 @@ const skills = [
   icon: <FaDatabase />,
   desc: 'Experience writing stored procedures, triggers, and queries using Oracle PL/SQL.',
   color: 'text-green-600',
+},
+{
+  id: 17,
+  title: 'Express',
+  icon: <SiExpress />,
+  desc: 'Building robust and scalable RESTful APIs with Node.js and Express.',
+  color: 'text-gray-600 dark:text-gray-300',
+},
+{
+  id: 18,
+  title: 'Next.js',
+  icon: <SiNextdotjs />,
+  desc: 'Server-side rendering and static site generation with React.',
+  color: 'text-black dark:text-white',
+},
+{
+  id: 19,
+  title: 'Speaking & Presentation',
+  icon: <FaChalkboardTeacher />,
+  desc: 'Effectively communicating technical concepts to diverse audiences.',
+  color: 'text-blue-500',
+},
+{
+  id: 20,
+  title: 'MongoDB',
+  icon: <SiMongodb />,
+  desc: 'Designing and managing NoSQL databases with MongoDB.',
+  color: 'text-green-500',
+},
+{
+  id: 21,
+  title: 'Google Firebase',
+  icon: <SiFirebase />,
+  desc: 'Developing real-time applications with Firebase services.',
+  color: 'text-yellow-500',
+},
+{
+  id: 22,
+  title: 'AWS',
+  icon: <FaAws />,
+  desc: 'Deploying and managing applications on Amazon Web Services.',
+  color: 'text-orange-500',
 },
 
   
