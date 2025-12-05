@@ -31,16 +31,14 @@ const Hero = () => {
         >
           {/* Heading */}
           <motion.h1
-            data-aos="fade-up" className="text-4xl md:text-6xl font-bold leading-tight"
+            data-aos="fade-up"
+            className="glitch-text text-4xl md:text-6xl font-bold mb-4 leading-tight relative text-blue-400"
+            data-text="Hi, I’m Yeshwant Rao"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.2, duration: 0.6 }}
           >
-           <h1 data-aos="fade-up" className="glitch-text text-4xl md:text-6xl font-bold mb-4 leading-tight relative text-blue-400" data-text="Hi, I’m Yeshwant Rao">
-  Hi, I’m Yeshwant Rao
-</h1>
-
-
+            Hi, I’m Yeshwant Rao
           </motion.h1>
 
           {/* Typing Bio */}

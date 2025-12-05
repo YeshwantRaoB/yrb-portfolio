@@ -63,7 +63,7 @@ const skills = [
     color: 'text-black dark:text-white',
   },
   {
-    id: 1,
+    id: 100,
     title: 'AI Prompt Engineering',
     icon: <FaBrain />,
     desc: 'Crafting efficient prompts for ChatGPT, DALL·E, and Sora.',

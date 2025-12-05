@@ -1,25 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
-import { Counter } from 'counterapi';
 
 const Footer = () => {
-  const [,setViews] = useState(null);
-
-  useEffect(() => {
-    const fetchViews = async () => {
-      try {
-        const counter = new Counter({ workspace: 'Fstac' }); // ✅ Your workspace
-        const result = await counter.up('yeshwant-portfolio'); // ✅ Your counter name
-        setViews(result.data.count); // ✅ Access the actual count
-      } catch (err) {
-        console.error('CounterAPI error:', err);
-        setViews(null);
-      }
-    };
-
-    fetchViews();
-  },);
-
   return (
     <footer className="bg-gradient-to-r from-blue-100 via-white to-blue-200 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 py-8 px-6 border-t border-blue-200 dark:border-blue-900">
       <motion.div

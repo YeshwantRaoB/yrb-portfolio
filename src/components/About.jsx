@@ -128,7 +128,6 @@ export default function About() {
         >
           <a
             href="https://drive.google.com/file/d/1BJTLqMPqL4a8PXV-h6l85I_a3bfq5k0k/view?usp=sharing"
-            view
             className="inline-flex items-center gap-2 px-7 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg shadow-lg transition font-semibold text-base"
           >
             <FiDownload /> View Resume
