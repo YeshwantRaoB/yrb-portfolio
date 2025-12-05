@@ -243,9 +243,9 @@ export default function About() {
                 <h4 className="text-lg font-semibold text-gray-800 dark:text-gray-100 mb-2">
                   Cyber Security and Privacy
                 </h4>
-                <p className="text-gray-600 dark:text-gray-300 mb-4">NPTEL, IIT Madras (Currently Pursuing)</p>
+                <p className="text-gray-600 dark:text-gray-300 mb-4">NPTEL, IIT Madras</p>
                 <a
-                  href="https://drive.google.com/file/d/1XHLM0VRQJAqZT2jwWCv60znPsLU3kOwB/view?usp=drive_link"
+                  href="https://drive.google.com/file/d/1-0SZTK-3VjpHYSjORnFIoQZ1fxK8xCKE/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition font-semibold"
