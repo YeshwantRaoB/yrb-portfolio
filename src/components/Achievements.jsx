@@ -20,7 +20,7 @@ import img26 from '../assets/images/26.jpg';
 import img27 from '../assets/images/27.jpg';
 import img28 from '../assets/images/28.jpg';
 import img29 from '../assets/images/29.jpg';
-
+import img30 from '../assets/images/30.jpg';
 const achievements = [
 	{
 		title: '1st Place – Paper Presentation',
@@ -60,7 +60,7 @@ const achievements = [
 		description:
 			'Presented: SentriPark: Intelligent Campus Vehicle Security Suite - Showcased a complete end-to-end solution for automated campus vehicle verification using ALPR, OCR pipelines, real-time push notifications, secure backend authentication, and cloud media offload..',
 		images: [
-			img27, img28, img29
+			img27,img30, img28, img29
 		],
 	},
 ];
