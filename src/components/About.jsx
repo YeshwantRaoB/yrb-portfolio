@@ -321,7 +321,8 @@ export default function About() {
                         </ul>
                         <p className="mt-3"><strong>Core Subjects:</strong> Data Structures, Java, Networking, Cybersecurity, Python</p>
                         <p className="mt-2"><strong>Projects:</strong> Linux Distro from Scratch, Self-hosted VPN Server, Secure Web Auth</p>
-                        <p className="mt-2">Actively involved as Class Representative and Student Council Member. <br> Member of IQAC, and Head Student Placement Coordinator ,Academic Year 2025-26</br></p>
+                        <p className="mt-2">Actively involved as Class Representative and Student Council Member. Academic Year 2023-25 </p>
+                        <p className="mt-2">Member of IQAC, and Head Student Placement Coordinator, Academic Year 2025-26 </p>
                       </>
                     )
                   }
