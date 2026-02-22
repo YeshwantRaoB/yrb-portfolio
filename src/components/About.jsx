@@ -317,7 +317,7 @@ export default function About() {
                           <li>2nd Sem GPA: 9.64</li>
                           <li>3rd Sem GPA: 10.00</li>
                           <li>4th Sem GPA: 10.00</li>
-                          <li>5th Sem GPA: Current</li>
+                          <li>5th Sem GPA: 10.00</li>
                         </ul>
                         <p className="mt-3"><strong>Core Subjects:</strong> Data Structures, Java, Networking, Cybersecurity, Python</p>
                         <p className="mt-2"><strong>Projects:</strong> Linux Distro from Scratch, Self-hosted VPN Server, Secure Web Auth</p>
