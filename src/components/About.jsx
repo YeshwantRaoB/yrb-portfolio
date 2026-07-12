@@ -16,7 +16,7 @@ const languages = [
   { name: 'Telugu', icon: <RiSpeakLine className="text-red-600 dark:text-red-400" /> },
 ];
 
-export default function About({ viewMode }) {
+export default function About() {
   // Modal control
   const [isOpen, setIsOpen] = useState(false);
   const [modalContent, setModalContent] = useState({ title: '', content: '' });
@@ -81,16 +81,11 @@ export default function About({ viewMode }) {
           viewport={{ once: true }}
         >
           <ReactTyped
-            strings={viewMode === 'freelance' ? [
+            strings={[
               "I'm a System Administrator & Full Stack Developer with expertise in enterprise solutions.",
               "I specialize in building secure, scalable systems and web applications.",
-              "Let me help transform your ideas into reliable, production-ready solutions."
-            ] : [
-              "I'm a passionate 3rd-year Diploma student in Computer Science, specializing in Full Stack Development.",
-              "I love building systems, securing & optimizing them.",
               "Driven by curiosity, focused on excellence, and inspired to innovate."
-            ]
-            }
+            ]}
             typeSpeed={38}
             backSpeed={18}
             loop
@@ -147,13 +142,10 @@ export default function About({ viewMode }) {
           viewport={{ once: true }}
         >
           <h3 className="text-2xl font-bold text-blue-700 dark:text-blue-400 mb-5 text-center">
-            {viewMode === 'freelance' ? 'Why Work With Me?' : 'Why Me?'}
+            Why Me?
           </h3>
           <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
-            {viewMode === 'freelance' 
-              ? "With 3+ years of hands-on experience in Full Stack Development, System Administration, and Cloud Infrastructure, I deliver production-ready solutions tailored to your business needs. I combine technical excellence with transparent communication and timely delivery. My approach: understand your vision, architect scalable solutions, and support you every step of the way. Your success is my success."
-              : "I believe in building with purpose. Whether it's presenting impactful ideas, developing secure systems, or leading a team, I bring passion, creativity, and resilience. My technical strengths in cybersecurity are matched by my leadership and communication skills, making me a strong candidate for both development and collaborative roles. I don't just deliver — I innovate, organize, and inspire."
-            }
+            With 3+ years of hands-on experience in Full Stack Development, System Administration, and Cloud Infrastructure, I deliver production-ready solutions tailored to business needs. I combine technical excellence with transparent communication and timely delivery. My approach: understand your vision, architect scalable solutions, and support you every step of the way. I don't just deliver — I innovate, organize, and inspire.
           </p>
         </motion.div>
 
