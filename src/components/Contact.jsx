@@ -36,7 +36,7 @@ const contactLinks = [
   },
 ];
 
-const Contact = () => {
+const Contact = ({ viewMode }) => {
   return (
     <section id="contact" className="py-20 px-2 sm:px-6 bg-gradient-to-br from-blue-100 via-white to-blue-200 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 transition-colors duration-300">
       <div data-aos="fade-up" className="max-w-3xl mx-auto text-center">
@@ -47,7 +47,7 @@ const Contact = () => {
           transition={{ duration: 0.7 }}
           viewport={{ once: true }}
         >
-          Contact
+          {viewMode === 'freelance' ? "Let's Work Together" : 'Contact'}
         </motion.h2>
         <motion.p
           className="text-lg text-gray-700 dark:text-gray-300 mb-10"
@@ -56,7 +56,9 @@ const Contact = () => {
           transition={{ duration: 0.7, delay: 0.2 }}
           viewport={{ once: true }}
         >
-          Have a question or want to connect? I’m just a click away.
+          {viewMode === 'freelance' 
+            ? 'Ready to discuss your project? Let me know how I can help!' 
+            : "Have a question or want to connect? I'm just a click away."}
         </motion.p>
         <motion.div
           className="flex flex-row flex-nowrap justify-center gap-6 mb-10"

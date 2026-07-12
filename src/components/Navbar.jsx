@@ -4,7 +4,7 @@ import { FaMoon, FaSun } from 'react-icons/fa';
 
 const sections = ['about', 'projects', 'skills', 'achievements', 'contact'];
 
-const Navbar = ({ darkMode, setDarkMode }) => {
+const Navbar = ({ darkMode, setDarkMode, viewMode, setViewMode }) => {
   const [showNavbar, setShowNavbar] = useState(false);
   const [activeSection, setActiveSection] = useState('');
   const [underlineStyle, setUnderlineStyle] = useState({});
@@ -87,6 +87,32 @@ const Navbar = ({ darkMode, setDarkMode }) => {
             className="absolute bottom-0 h-[2px] bg-blue-600 dark:bg-blue-400 transition-all duration-500 ease-in-out rounded-full"
             style={underlineStyle}
           />
+
+          {/* View Mode Toggle */}
+          <div className="ml-3 flex items-center gap-2 bg-gray-100 dark:bg-gray-700 rounded-full p-1">
+            <button
+              onClick={() => setViewMode('professional')}
+              className={`px-3 py-1 text-sm font-semibold rounded-full transition ${
+                viewMode === 'professional'
+                  ? 'bg-blue-600 text-white'
+                  : 'text-gray-700 dark:text-gray-300 hover:text-blue-600'
+              }`}
+              aria-label="Professional Mode"
+            >
+              Job
+            </button>
+            <button
+              onClick={() => setViewMode('freelance')}
+              className={`px-3 py-1 text-sm font-semibold rounded-full transition ${
+                viewMode === 'freelance'
+                  ? 'bg-blue-600 text-white'
+                  : 'text-gray-700 dark:text-gray-300 hover:text-blue-600'
+              }`}
+              aria-label="Freelance Mode"
+            >
+              Client
+            </button>
+          </div>
 
           {/* Dark Mode Button */}
           <button
