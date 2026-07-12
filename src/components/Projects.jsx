@@ -83,9 +83,14 @@ const projects = [
   }
 ];
 
-export default function Projects() {
+export default function Projects({ viewMode }) {
   const [selectedProject, setSelectedProject] = useState(null);
   const [slideIndex, setSlideIndex] = useState(0);
+  
+  // Filter projects based on view mode
+  const displayProjects = viewMode === 'freelance' 
+    ? projects.filter(p => [4, 5, 6, 7].includes(p.id)) // Client projects
+    : projects; // All projects for job search
 
   // Reset slideIndex when opening a new project
   React.useEffect(() => {
@@ -95,10 +100,12 @@ export default function Projects() {
   return (
     <section id="projects" className="bg-gradient-to-r from-blue-100 via-white to-blue-200 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 py-8 px-6 border-t border-blue-200 dark:border-blue-900">
       <div data-aos="fade-up" className="max-w-5xl mx-auto text-center">
-        <h2 className="text-3xl font-bold text-blue-700 dark:text-blue-400 mb-8">Projects</h2>
+        <h2 className="text-3xl font-bold text-blue-700 dark:text-blue-400 mb-8">
+          {viewMode === 'freelance' ? 'Client Projects' : 'Projects'}
+        </h2>
 
         <div data-aos="fade-up" className="flex flex-wrap justify-center gap-6">
-          {projects.map((project) => (
+          {displayProjects.map((project) => (
             <motion.div
               data-aos="fade-up" key={project.id}
               className="w-full md:w-[48%] bg-white dark:bg-gray-800 rounded-lg shadow p-6 cursor-pointer hover:shadow-lg transition"
