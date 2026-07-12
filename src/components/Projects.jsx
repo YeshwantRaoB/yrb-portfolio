@@ -10,6 +10,7 @@ import img16 from '../assets/images/16.webp';
 import img21 from '../assets/images/21.png';
 import img22 from '../assets/images/22.png';
 import img30 from '../assets/images/30.png';
+import img32 from '../assets/images/32.png';
 const projects = [
   {
     id: 1,
@@ -85,9 +86,9 @@ const projects = [
     id: 8,
     title: 'MacPro Technologies Portal - Dynamic Website Development',
     desc: 'Enterprise-grade dynamic website for MacPro Technologies Pvt. Ltd. featuring online aptitude testing and recruitment management.',
-    details: 'A comprehensive HR & recruitment portal built with React, Node.js, Express, MongoDB, and advanced authentication. Features include: (1) Online Aptitude Test System with real-time scoring and analytics, (2) Job Portal for applicants to browse and apply for positions, (3) Admin Dashboard for managing job postings, applicants, and test configurations, (4) Role-based Access Control with JWT authentication, (5) Responsive design optimized for all devices, (6) Email notifications for applicants and recruiters, (7) Export functionality for recruitment reports. The platform streamlines the entire hiring workflow from job posting to applicant screening. Budget: Starting from ₹2,50,000 for full development and deployment.',
+    details: 'A comprehensive HR & recruitment portal built with React, Node.js, Express, MongoDB. Features include: (1) Online Aptitude Test System with real-time scoring and analytics, (2) Job Portal for applicants to browse and apply for positions, (3) Admin Dashboard for managing job postings, applicants, and test configurations, (4) Role-based Access Control with JWT authentication, (5) Responsive design optimized for all devices, (6) Email notifications for applicants and recruiters, (7) Export functionality for recruitment reports. The platform streamlines the entire hiring workflow from job posting to applicant screening. Budget: Starting from ₹2,50,000 for full development and deployment.<a href="https://macpro-technologies.com" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">https://macpro-technologies.com</a>',
     images: [
-      'https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=400&fit=crop'
+      img32
     ]
   }
 ];
