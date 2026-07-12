@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { ReactTyped } from 'react-typed';
 
-const Hero = ({ viewMode }) => {
+const Hero = () => {
   return (
     <section
       id="hero"
@@ -49,17 +49,11 @@ const Hero = ({ viewMode }) => {
             transition={{ delay: 0.4, duration: 0.6 }}
           >
             <ReactTyped
-              strings={viewMode === 'freelance' ? [
+              strings={[
                 'Full Stack Developer & System Administrator.',
                 'Building Scalable Web Solutions.',
                 'Enterprise Security & DevOps Expertise.',
                 'Your Trusted Tech Partner.',
-                'Let\'s Build Something Amazing Together.'
-              ] : [
-                'System Administrator & Full Stack Developer.',
-                'Tech Enthusiast.',
-                'Creator. Problem Solver. Leader.',
-                'Building Reliable, Secure Systems',
                 'Driven by Curiosity. Focused on Excellence.'
               ]}
               typeSpeed={45}

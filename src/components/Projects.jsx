@@ -80,17 +80,21 @@ const projects = [
     images: [
       img30
     ]
+  },
+  {
+    id: 8,
+    title: 'MacPro Technologies Portal - Dynamic Website Development',
+    desc: 'Enterprise-grade dynamic website for MacPro Technologies Pvt. Ltd. featuring online aptitude testing and recruitment management.',
+    details: 'A comprehensive HR & recruitment portal built with React, Node.js, Express, MongoDB, and advanced authentication. Features include: (1) Online Aptitude Test System with real-time scoring and analytics, (2) Job Portal for applicants to browse and apply for positions, (3) Admin Dashboard for managing job postings, applicants, and test configurations, (4) Role-based Access Control with JWT authentication, (5) Responsive design optimized for all devices, (6) Email notifications for applicants and recruiters, (7) Export functionality for recruitment reports. The platform streamlines the entire hiring workflow from job posting to applicant screening. Budget: Starting from ₹2,50,000 for full development and deployment.',
+    images: [
+      'https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=400&fit=crop'
+    ]
   }
 ];
 
-export default function Projects({ viewMode }) {
+export default function Projects() {
   const [selectedProject, setSelectedProject] = useState(null);
   const [slideIndex, setSlideIndex] = useState(0);
-  
-  // Filter projects based on view mode
-  const displayProjects = viewMode === 'freelance' 
-    ? projects.filter(p => [4, 5, 6, 7].includes(p.id)) // Client projects
-    : projects; // All projects for job search
 
   // Reset slideIndex when opening a new project
   React.useEffect(() => {
@@ -101,11 +105,11 @@ export default function Projects({ viewMode }) {
     <section id="projects" className="bg-gradient-to-r from-blue-100 via-white to-blue-200 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 py-8 px-6 border-t border-blue-200 dark:border-blue-900">
       <div data-aos="fade-up" className="max-w-5xl mx-auto text-center">
         <h2 className="text-3xl font-bold text-blue-700 dark:text-blue-400 mb-8">
-          {viewMode === 'freelance' ? 'Client Projects' : 'Projects'}
+          Projects
         </h2>
 
         <div data-aos="fade-up" className="flex flex-wrap justify-center gap-6">
-          {displayProjects.map((project) => (
+          {projects.map((project) => (
             <motion.div
               data-aos="fade-up" key={project.id}
               className="w-full md:w-[48%] bg-white dark:bg-gray-800 rounded-lg shadow p-6 cursor-pointer hover:shadow-lg transition"

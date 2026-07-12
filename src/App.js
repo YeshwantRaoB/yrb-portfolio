@@ -11,14 +11,12 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Achievements from './components/Achievements';
 import Services from './components/Services';
-import Testimonials from './components/Testimonials';
 import Engagement from './components/Engagement';
 import ScrollToTop from './components/ScrollToTop';
 import Loader from './components/Loader';
 
 function App() {
   const [darkMode, setDarkMode] = useState(true);
-  const [viewMode, setViewMode] = useState('professional'); // 'professional' or 'freelance'
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -71,16 +69,15 @@ function App() {
         <Loader />
       ) : (
         <>
-          <Navbar darkMode={darkMode} setDarkMode={setDarkMode} viewMode={viewMode} setViewMode={setViewMode} />
-          <Hero viewMode={viewMode} />
-          <About viewMode={viewMode} />
-          <Projects viewMode={viewMode} />
-          {viewMode === 'freelance' && <Services />}
+          <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
+          <Hero />
+          <About />
+          <Projects />
+          <Services />
           <Skills />
           <Achievements />
-          {viewMode === 'freelance' && <Testimonials />}
-          {viewMode === 'freelance' && <Engagement />}
-          <Contact viewMode={viewMode} />
+          <Engagement />
+          <Contact />
           <Footer />
           <ScrollToTop />
         </>

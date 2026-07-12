@@ -8,7 +8,7 @@ const engagementModels = [
     title: 'Project-Based',
     description: 'Perfect for specific projects with defined scope and deliverables.',
     icon: <FaCode className="text-3xl" />,
-    price: 'Custom',
+    price: 'Custom Quote',
     duration: 'Variable',
     features: [
       'Detailed project specification',
@@ -25,7 +25,7 @@ const engagementModels = [
     title: 'Hourly Consulting',
     description: 'Flexible engagement for code reviews, consulting, and troubleshooting.',
     icon: <FaClock className="text-3xl" />,
-    price: '$25-50/hr',
+    price: '₹1,500-2,500/hr',
     duration: 'Flexible',
     features: [
       'Pay for hours used',
@@ -42,7 +42,7 @@ const engagementModels = [
     title: 'Retainer (Part-time)',
     description: 'Ongoing support and maintenance for your systems.',
     icon: <FaHeadset className="text-3xl" />,
-    price: '$500-1500/mo',
+    price: '₹30,000-90,000/mo',
     duration: 'Monthly',
     features: [
       '10-20 hours per month',
