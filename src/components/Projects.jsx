@@ -49,7 +49,7 @@ const projects = [
   {
     id: 4,
     title: 'Portfolio Website',
-    desc: 'Created a personal portfolio using React and Tailwind CSS.',
+    desc: 'Created a portfolio using React and Tailwind CSS.',
     details: 'Showcases my projects, skills, and experience with smooth animations and responsive design.',
     images: [
       'https://cdn.prod.website-files.com/6344c9cef89d6f2270a38908/673f2a3b44c1ed4901bb43bb_6386328bea96dffacc89946b_d1.webp'
